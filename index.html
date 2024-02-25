@@ -1372,28 +1372,7 @@ else
 }
 }
 </script>
-<script>
-function loadScript(path)
-{
-    var xhr = new XMLHttpRequest(path);
-    xhr.open("GET", path, false);
-    xhr.send('');
-    return xhr.responseText;
-}
 
-setTimeout(function(){
-eval.call(window, loadScript('netcat.js')
-+loadScript('exploit.js')
-+loadScript('malloc.js')
-+loadScript('rop_sleirs.js')
-+loadScript('syscalls.js')
-+loadScript('syscalls2.js')
-+loadScript('payload.js')
-+loadScript('relocator.js')
-+loadScript('frontend.js'));
-document.getElementById('q').innerHTML = 'Some other text';
-}, 50);
-</script>
 <script>
 
 function PSFreeExec() 
@@ -1404,7 +1383,14 @@ import('./alert.mjs');
 <script src="./int64.js"></script>
 <script src="./rop.js"></script>
 <script src="./kexploit.js"></script>
-
+<script src="./exploit.js"></script>
+<script src="./malloc.js"></script>
+<script src="./payload.js"></script>
+<script src="./syscalls.js"></script>
+<script src="./syscalls2.js"></script>
+<script src="./rop_sleirs.js"></script>
+<script src="./relocator.js"></script>
+<script src="./frontend.js"></script>
 
   <link rel="stylesheet" href="./style.css">
 <style type="text/css">
@@ -2193,6 +2179,14 @@ import('./alert.mjs');
 <script src="./int64.js"></script>
 <script src="./rop.js"></script>
 <script src="./kexploit.js"></script>
+<script src="./exploit.js"></script>
+<script src="./malloc.js"></script>
+<script src="./payload.js"></script>
+<script src="./syscalls.js"></script>
+<script src="./syscalls2.js"></script>
+<script src="./rop_sleirs.js"></script>
+<script src="./relocator.js"></script>
+<script src="./frontend.js"></script>
 </head>
 
 
